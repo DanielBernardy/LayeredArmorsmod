@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lthelmet"
+    },
+    {
+      "item": "minecraft:chainmail_helmet"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lcthelmet",
+    "count": 1
+  }
+
+}

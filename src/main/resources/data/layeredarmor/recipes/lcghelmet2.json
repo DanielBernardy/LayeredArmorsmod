@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lchelmet"
+    },
+    {
+      "item": "minecraft:golden_helmet"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lcghelmet",
+    "count": 1
+  }
+
+}

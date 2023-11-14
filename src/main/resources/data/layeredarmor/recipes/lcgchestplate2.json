@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lcchestplate"
+    },
+    {
+      "item": "minecraft:golden_chestplate"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lcgchestplate",
+    "count": 1
+  }
+
+}

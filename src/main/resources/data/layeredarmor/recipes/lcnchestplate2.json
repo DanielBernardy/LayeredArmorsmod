@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lcchestplate"
+    },
+    {
+      "item": "minecraft:netherite_chestplate"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lcnchestplate",
+    "count": 1
+  }
+
+}

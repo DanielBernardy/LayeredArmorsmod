@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather_helmet"
+    },
+    {
+      "item": "minecraft:turtle_helmet"
+    }
+  ],
+  "result": {
+    "item": "layeredarmor:lthelmet",
+    "count": 1
+  }
+
+}
