@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lcdchestplate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond_chestplate",
+    "count": 1
+  }
+
+}

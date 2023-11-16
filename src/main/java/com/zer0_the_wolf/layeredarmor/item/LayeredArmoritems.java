@@ -6,16 +6,18 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.common.extensions.IForgeItem;
 
 public class LayeredArmoritems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, LayeredArmor.MOD_ID);
 
-    public static final RegistryObject<Item> LEATHERCHAINHELMET = ITEMS.register("lchelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAIN, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> LEATHERCHAINHELMET = ITEMS.register("lchelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAIN, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)/*.craftRemainder(Items.LEATHER_HELMET)*/));
     public static final RegistryObject<Item> LEATHERCHAINCHESTPLATE = ITEMS.register("lcchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAIN, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> LEATHERCHAINLEGGINGS = ITEMS.register("lcleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAIN, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> LEATHERCHAINBOOTS = ITEMS.register("lcboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAIN, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
@@ -42,29 +44,32 @@ public class LayeredArmoritems {
     public static final RegistryObject<Item> LEATHERNETHERITELEGGINGS = ITEMS.register("lnleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERNETHERITE, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> LEATHERNETHERITEBOOTS = ITEMS.register("lnboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERNETHERITE, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
-    public static final RegistryObject<Item> LEATHERCHAINIRONHELMET = ITEMS.register("lcihelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINIRONCHESTPLATE = ITEMS.register("lcichestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINIRONLEGGINGS = ITEMS.register("lcileggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINIRONBOOTS = ITEMS.register("lciboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> LEATHERCHAINIRONHELMET = ITEMS.register("lcihelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINHELMET.get())));
+    public static final RegistryObject<Item> LEATHERCHAINIRONCHESTPLATE = ITEMS.register("lcichestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINCHESTPLATE.get())));
+    public static final RegistryObject<Item> LEATHERCHAINIRONLEGGINGS = ITEMS.register("lcileggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINLEGGINGS.get())));
+    public static final RegistryObject<Item> LEATHERCHAINIRONBOOTS = ITEMS.register("lciboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINIRON, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINBOOTS.get())));
 
-    public static final RegistryObject<Item> LEATHERCHAINTURTLEHELMET = ITEMS.register("lcthelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINTURTLE, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> LEATHERCHAINTURTLEHELMET = ITEMS.register("lcthelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINTURTLE, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINHELMET.get())));
 
-    public static final RegistryObject<Item> LEATHERCHAINGOLDHELMET = ITEMS.register("lcghelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINGOLDCHESTPLATE = ITEMS.register("lcgchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINGOLDLEGGINGS = ITEMS.register("lcgleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINGOLDBOOTS = ITEMS.register("lcgboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> LEATHERCHAINGOLDHELMET = ITEMS.register("lcghelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINHELMET.get())));
+    public static final RegistryObject<Item> LEATHERCHAINGOLDCHESTPLATE = ITEMS.register("lcgchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINCHESTPLATE.get())));
+    public static final RegistryObject<Item> LEATHERCHAINGOLDLEGGINGS = ITEMS.register("lcgleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINLEGGINGS.get())));
+    public static final RegistryObject<Item> LEATHERCHAINGOLDBOOTS = ITEMS.register("lcgboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINGOLD, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINBOOTS.get())));
 
-    public static final RegistryObject<Item> LEATHERCHAINDIAMONDHELMET = ITEMS.register("lcdhelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINDIAMONDCHESTPLATE = ITEMS.register("lcdchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINDIAMONDLEGGINGS = ITEMS.register("lcdleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINDIAMONDBOOTS = ITEMS.register("lcdboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> LEATHERCHAINDIAMONDHELMET = ITEMS.register("lcdhelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINHELMET.get())));
+    public static final RegistryObject<Item> LEATHERCHAINDIAMONDCHESTPLATE = ITEMS.register("lcdchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINCHESTPLATE.get())));
+    public static final RegistryObject<Item> LEATHERCHAINDIAMONDLEGGINGS = ITEMS.register("lcdleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINLEGGINGS.get())));
+    public static final RegistryObject<Item> LEATHERCHAINDIAMONDBOOTS = ITEMS.register("lcdboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINDIAMOND, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINBOOTS.get())));
 
-    public static final RegistryObject<Item> LEATHERCHAINNETHERITEELMET = ITEMS.register("lcnhelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINNETHERITECHESTPLATE = ITEMS.register("lcnchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINNETHERITELEGGINGS = ITEMS.register("lcnleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> LEATHERCHAINNETHERITEBOOTS = ITEMS.register("lcnboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> LEATHERCHAINNETHERITEELMET = ITEMS.register("lcnhelmet",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINHELMET.get())));
+    public static final RegistryObject<Item> LEATHERCHAINNETHERITECHESTPLATE = ITEMS.register("lcnchestplate",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINCHESTPLATE.get())));
+    public static final RegistryObject<Item> LEATHERCHAINNETHERITELEGGINGS = ITEMS.register("lcnleggings",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINLEGGINGS.get())));
+    public static final RegistryObject<Item> LEATHERCHAINNETHERITEBOOTS = ITEMS.register("lcnboots",() -> new ArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).craftRemainder(LayeredArmoritems.LEATHERCHAINBOOTS.get())));
 
     public static void register(IEventBus eventBus) {
+
         ITEMS.register(eventBus);
     }
+
+
 }

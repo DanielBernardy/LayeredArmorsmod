@@ -57,6 +57,8 @@ public enum LayeredArmorMaterials implements ArmorMaterial{
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
+
+
     private LayeredArmorMaterials(String pName, int pDurabilityMultiplier, int[] pSlotProtections, int pEnchantmentValue, SoundEvent pSound, float pToughness, float pKnockbackResistance, Supplier<Ingredient> pRepairIngredient) {
         this.name = pName;
         this.durabilityMultiplier = pDurabilityMultiplier;
@@ -66,6 +68,7 @@ public enum LayeredArmorMaterials implements ArmorMaterial{
         this.toughness = pToughness;
         this.knockbackResistance = pKnockbackResistance;
         this.repairIngredient = new LazyLoadedValue<>(pRepairIngredient);
+
     }
 
     public int getDurabilityForSlot(EquipmentSlot pSlot) {
@@ -95,6 +98,8 @@ public enum LayeredArmorMaterials implements ArmorMaterial{
     public float getToughness() {
         return this.toughness;
     }
+
+
 
     /**
      * Gets the percentage of knockback resistance provided by armor of the material.
