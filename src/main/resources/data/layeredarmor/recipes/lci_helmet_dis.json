@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lci_helmet"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_helmet",
+    "count": 1
+  }
+
+}

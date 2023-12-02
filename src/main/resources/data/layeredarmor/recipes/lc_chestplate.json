@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather_chestplate"
+    },
+    {
+      "item": "minecraft:chainmail_chestplate"
+    }
+  ],
+  "result": {
+    "item": "layeredarmor:lc_chestplate",
+    "count": 1
+  }
+
+}

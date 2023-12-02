@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "layeredarmor:item/lct_helmet",
+    "layer1": "layeredarmor:item/lct_helmet_overlay"
+  }
+}

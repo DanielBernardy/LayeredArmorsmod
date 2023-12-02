@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:li_leggings"
+    },
+    {
+      "item": "minecraft:chainmail_leggings"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lci_leggings",
+    "count": 1
+  }
+
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lc_helmet"
+    },
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lcn_helmet",
+    "count": 1
+  }
+
+}

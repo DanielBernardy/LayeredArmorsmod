@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+
+    {
+      "item": "layeredarmor:lcd_boots"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond_boots",
+    "count": 1
+  }
+
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "layeredarmor:item/ln_leggings",
+    "layer1": "layeredarmor:item/ln_leggings_overlay"
+  }
+}

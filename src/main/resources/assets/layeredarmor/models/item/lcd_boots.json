@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "layeredarmor:item/lcd_boots",
+    "layer1": "layeredarmor:item/lcd_boots_overlay"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+
+    {
+      "item": "layeredarmor:lcn_boots"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_boots",
+    "count": 1
+  }
+
+}

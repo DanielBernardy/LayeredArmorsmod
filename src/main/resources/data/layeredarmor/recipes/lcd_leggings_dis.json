@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lcd_leggings"
+
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond_leggings",
+    "count": 1
+  }
+
+}

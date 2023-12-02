@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "layeredarmor:lg_boots"
+    },
+    {
+      "item": "minecraft:chainmail_boots"
+    }
+
+  ],
+  "result": {
+    "item": "layeredarmor:lcg_boots",
+    "count": 1
+  }
+
+}

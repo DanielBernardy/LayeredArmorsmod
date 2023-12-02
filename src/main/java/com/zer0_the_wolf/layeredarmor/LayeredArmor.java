@@ -2,6 +2,7 @@ package com.zer0_the_wolf.layeredarmor;
 
 import com.mojang.logging.LogUtils;
 import com.zer0_the_wolf.layeredarmor.item.LayeredArmoritems;
+import com.zer0_the_wolf.layeredarmor.item.custom.ColorHandlers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,10 +27,14 @@ public class LayeredArmor
         LayeredArmoritems.register(eventBus);
         eventBus.addListener(this::setup);
 
+        // register the color handling for dying items
+        eventBus.addListener(ColorHandlers::registerItemColors);
 
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+
 
     }
 
@@ -39,5 +44,6 @@ public class LayeredArmor
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+
 
    }
