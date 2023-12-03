@@ -1,10 +1,10 @@
 {
   "type": "layeredarmor:mult_output",
   "ingredients": [
-    {"item": "layeredarmor:lcn_boots"}
+    {"item": "layeredarmor:ln_boots"}
   ],
   "result": {
     "item": "minecraft:netherite_boots"
   },
-  "remaining": "layeredarmor:lc_boots"
+  "remaining": "minecraft:leather_boots"
 }

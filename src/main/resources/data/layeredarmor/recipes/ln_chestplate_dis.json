@@ -1,10 +1,10 @@
 {
   "type": "layeredarmor:mult_output",
   "ingredients": [
-    {"item": "layeredarmor:lcn_chestplate"}
+    {"item": "layeredarmor:ln_chestplate"}
   ],
   "result": {
     "item": "minecraft:netherite_chestplate"
   },
-  "remaining": "layeredarmor:lc_chestplate"
+  "remaining": "minecraft:leather_chestplate"
 }

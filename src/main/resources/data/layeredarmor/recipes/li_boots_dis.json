@@ -1,10 +1,10 @@
 {
   "type": "layeredarmor:mult_output",
   "ingredients": [
-    {"item": "layeredarmor:lci_boots"}
+    {"item": "layeredarmor:li_boots"}
   ],
   "result": {
     "item": "minecraft:iron_boots"
   },
-  "remaining": "layeredarmor:lc_boots"
+  "remaining": "minecraft:leather_boots"
 }

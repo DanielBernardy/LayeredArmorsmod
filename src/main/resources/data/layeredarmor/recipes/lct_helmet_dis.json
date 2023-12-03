@@ -1,13 +1,10 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "layeredarmor:mult_output",
   "ingredients": [
-    {
-      "item": "layeredarmor:lct_helmet"
-    }
+    {"item": "layeredarmor:lct_helmet"}
   ],
   "result": {
-    "item": "minecraft:turtle_helmet",
-    "count": 1
-  }
-
+    "item": "minecraft:turtle_helmet"
+  },
+  "remaining": "layeredarmor:lc_helmet"
 }

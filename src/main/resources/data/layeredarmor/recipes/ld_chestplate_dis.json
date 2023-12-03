@@ -1,10 +1,10 @@
 {
   "type": "layeredarmor:mult_output",
   "ingredients": [
-    {"item": "layeredarmor:lcd_chestplate"}
+    {"item": "layeredarmor:ld_chestplate"}
   ],
   "result": {
     "item": "minecraft:diamond_chestplate"
   },
-  "remaining": "layeredarmor:lc_chestplate"
+  "remaining": "minecraft:leather_chestplate"
 }

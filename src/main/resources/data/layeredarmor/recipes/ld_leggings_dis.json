@@ -1,10 +1,10 @@
 {
   "type": "layeredarmor:mult_output",
   "ingredients": [
-    {"item": "layeredarmor:lcd_leggings"}
+    {"item": "layeredarmor:ld_leggings"}
   ],
   "result": {
     "item": "minecraft:diamond_leggings"
   },
-  "remaining": "layeredarmor:lc_leggings"
+  "remaining": "minecraft:leather_leggings"
 }

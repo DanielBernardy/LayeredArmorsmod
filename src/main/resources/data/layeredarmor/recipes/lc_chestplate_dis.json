@@ -1,0 +1,10 @@
+{
+  "type": "layeredarmor:mult_output",
+  "ingredients": [
+    {"item": "layeredarmor:lc_chestplate"}
+  ],
+  "result": {
+    "item": "minecraft:chainmail_chestplate"
+  },
+  "remaining": "minecraft:leather_chestplate"
+}
