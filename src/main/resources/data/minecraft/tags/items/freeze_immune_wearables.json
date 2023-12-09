@@ -1,0 +1,47 @@
+{
+  "replace": false,
+  "values": [
+    "layeredarmor:lc_boots",
+    "layeredarmor:li_boots",
+    "layeredarmor:lg_boots",
+    "layeredarmor:ld_boots",
+    "layeredarmor:ln_boots",
+    "layeredarmor:lci_boots",
+    "layeredarmor:lcg_boots",
+    "layeredarmor:lcd_boots",
+    "layeredarmor:lcn_boots",
+
+
+    "layeredarmor:lc_leggings",
+    "layeredarmor:li_leggings",
+    "layeredarmor:lg_leggings",
+    "layeredarmor:ld_leggings",
+    "layeredarmor:ln_leggings",
+    "layeredarmor:lci_leggings",
+    "layeredarmor:lcg_leggings",
+    "layeredarmor:lcd_leggings",
+    "layeredarmor:lcn_leggings",
+
+    "layeredarmor:lc_chestplate",
+    "layeredarmor:li_chestplate",
+    "layeredarmor:lg_chestplate",
+    "layeredarmor:ld_chestplate",
+    "layeredarmor:ln_chestplate",
+    "layeredarmor:lci_chestplate",
+    "layeredarmor:lcg_chestplate",
+    "layeredarmor:lcd_chestplate",
+    "layeredarmor:lcn_chestplate",
+
+    "layeredarmor:lc_helmet",
+    "layeredarmor:li_helmet",
+    "layeredarmor:lg_helmet",
+    "layeredarmor:ld_helmet",
+    "layeredarmor:ln_helmet",
+    "layeredarmor:lt_helmet",
+    "layeredarmor:lci_helmet",
+    "layeredarmor:lcg_helmet",
+    "layeredarmor:lcd_helmet",
+    "layeredarmor:lcn_helmet",
+    "layeredarmor:lct_helmet"
+  ]
+}

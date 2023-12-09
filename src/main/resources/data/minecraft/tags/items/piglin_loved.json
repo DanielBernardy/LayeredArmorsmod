@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "layeredarmor:lg_boots",
+    "layeredarmor:lcg_boots",
+
+    "layeredarmor:lg_leggings",
+    "layeredarmor:lcg_leggings",
+
+    "layeredarmor:lg_chestplate",
+    "layeredarmor:lcg_chestplate",
+
+    "layeredarmor:lg_helmet",
+    "layeredarmor:lcg_helmet"
+  ]
+}
