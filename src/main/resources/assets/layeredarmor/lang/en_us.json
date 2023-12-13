@@ -47,5 +47,9 @@
   "item.layeredarmor.lcn_helmet": "Leather Chainmail Netherite Helmet",
   "item.layeredarmor.lcn_chestplate": "Leather Chainmail Netherite Chestplate",
   "item.layeredarmor.lcn_leggings": "Leather Chainmail Netherite Leggings",
-  "item.layeredarmor.lcn_boots": "Leather Chainmail Netherite Boots"
+  "item.layeredarmor.lcn_boots": "Leather Chainmail Netherite Boots",
+
+  "item.layeredarmor.li_horse_armor": "Leather Iron Horse Armor",
+  "item.layeredarmor.lg_horse_armor": "Leather Gold Horse Armor",
+  "item.layeredarmor.ld_horse_armor": "Leather Diamond Horse Armor"
 }

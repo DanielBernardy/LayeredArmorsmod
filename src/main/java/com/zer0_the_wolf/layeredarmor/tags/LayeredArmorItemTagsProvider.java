@@ -1,4 +1,4 @@
-package com.zer0_the_wolf.layeredarmor.tags;
+/*package com.zer0_the_wolf.layeredarmor.tags;
 
 import com.zer0_the_wolf.layeredarmor.item.LayeredArmorItems;
 import net.minecraft.core.Registry;
@@ -67,5 +67,5 @@ public class LayeredArmorItemTagsProvider extends ItemTagsProvider {
                         LayeredArmorItems.LEATHERNETHERITELEGGINGS.get()
                 );
     }
-}
+}*/
 

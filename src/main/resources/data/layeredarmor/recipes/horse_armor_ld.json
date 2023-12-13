@@ -1,0 +1,16 @@
+{
+  "type": "layeredarmor:mult_output",
+  "ingredients": [
+    {
+      "item": "minecraft:leather_horse_armor"
+    },
+    {
+      "item": "minecraft:diamond_horse_armor"
+    }
+  ],
+  "result": {
+    "item": "layeredarmor:horse_armor_ld",
+    "count": 1
+  }
+
+}

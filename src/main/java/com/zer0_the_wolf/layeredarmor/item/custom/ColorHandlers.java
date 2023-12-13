@@ -57,7 +57,10 @@ public class ColorHandlers {//extends ArmorDyeRecipe {
                 LayeredArmorItems.LEATHERCHAINNETHERITEHELMET.get(),
                 LayeredArmorItems.LEATHERCHAINNETHERITECHESTPLATE.get(),
                 LayeredArmorItems.LEATHERCHAINNETHERITELEGGINGS.get(),
-                LayeredArmorItems.LEATHERCHAINNETHERITEBOOTS.get()
+                LayeredArmorItems.LEATHERCHAINNETHERITEBOOTS.get()//,
+                //LayeredArmorItems.LEATHERIRONHORSE.get(),
+                //LayeredArmorItems.LEATHERGOLDHORSE.get(),
+                //LayeredArmorItems.LEATHERDIAMONDHORSE.get()
         );
 
     }

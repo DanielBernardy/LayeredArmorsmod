@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "layeredarmor:mult_output",
   "ingredients": [
     {
     "item": "minecraft:leather_helmet"

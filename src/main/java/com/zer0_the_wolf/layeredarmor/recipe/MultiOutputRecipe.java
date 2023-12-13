@@ -28,9 +28,22 @@ public class MultiOutputRecipe extends ShapelessRecipe
         this.remaining = remaining;
     }
 
+    @Override
+    public ItemStack assemble(CraftingContainer pInv) {
+        int totalDamage = 0;
+        for(int i = 0; i < pInv.getContainerSize(); ++i) {
+            totalDamage += pInv.getItem(i).getDamageValue();
+        }
+        ItemStack returnItem = getResultItem().copy();
+        returnItem.setDamageValue(totalDamage);
+
+        return returnItem;
+    }
+
     @NotNull
     @Override
-    public NonNullList<ItemStack> getRemainingItems(CraftingContainer pContainer) {
+    public NonNullList<ItemStack> getRemainingItems(CraftingContainer pContainer)
+    {
         NonNullList<ItemStack> nonnulllist = NonNullList.withSize(pContainer.getContainerSize(), ItemStack.EMPTY);
         nonnulllist.set(4,remaining.copy());
         return nonnulllist;

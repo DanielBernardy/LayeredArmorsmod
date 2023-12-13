@@ -42,6 +42,10 @@
     "layeredarmor:lcg_helmet",
     "layeredarmor:lcd_helmet",
     "layeredarmor:lcn_helmet",
-    "layeredarmor:lct_helmet"
+    "layeredarmor:lct_helmet",
+
+    "layeredarmor:li_horse_armor",
+    "layeredarmor:lg_horse_armor",
+    "layeredarmor:ld_horse_armor"
   ]
 }

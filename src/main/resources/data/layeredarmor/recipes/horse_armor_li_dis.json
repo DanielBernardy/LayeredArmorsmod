@@ -1,0 +1,10 @@
+{
+  "type": "layeredarmor:mult_output",
+  "ingredients": [
+    {"item": "layeredarmor:horse_armor_li"}
+  ],
+  "result": {
+    "item": "minecraft:iron_horse_armor"
+  },
+  "remaining": "minecraft:leather_horse_armor"
+}

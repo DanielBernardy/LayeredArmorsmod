@@ -7,8 +7,8 @@ import net.minecraft.world.item.*;
 import static com.zer0_the_wolf.layeredarmor.item.LayeredArmorItems.*;
 
 public class LayeredArmorItem extends DyeableArmorItem {
-    public LayeredArmorItem(ArmorMaterial p_41091_, EquipmentSlot p_41092_, Properties p_41093_) {
-        super(p_41091_, p_41092_, p_41093_);
+    public LayeredArmorItem(ArmorMaterial pMaterial, EquipmentSlot pSlot, Properties pProperties) {
+        super(pMaterial, pSlot, pProperties);
     }
     @Override
     public boolean canWalkOnPowderedSnow(ItemStack stack, LivingEntity wearer)

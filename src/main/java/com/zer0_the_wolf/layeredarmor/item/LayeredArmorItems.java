@@ -19,8 +19,6 @@ import net.minecraftforge.registries.tags.ITagManager;
 
 import static com.zer0_the_wolf.layeredarmor.LayeredArmor.*;
 
-//import static net.minecraft.world.item.DyeableLeatherItem.DEFAULT_LEATHER_COLOR;
-
 public class LayeredArmorItems {
 
     public static final String MULTI_RECIPE_ID = "mult_output";
@@ -80,6 +78,17 @@ public class LayeredArmorItems {
     public static final RegistryObject<DyeableArmorItem> LEATHERCHAINNETHERITECHESTPLATE = ITEMS.register("lcn_chestplate",() -> new LayeredArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()/*.craftRemainder(LayeredArmorItems.LEATHERCHAINCHESTPLATE.get())*/));
     public static final RegistryObject<DyeableArmorItem> LEATHERCHAINNETHERITELEGGINGS = ITEMS.register("lcn_leggings",() -> new LayeredArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()/*.craftRemainder(LayeredArmorItems.LEATHERCHAINLEGGINGS.get())*/));
     public static final RegistryObject<DyeableArmorItem> LEATHERCHAINNETHERITEBOOTS = ITEMS.register("lcn_boots",() -> new LayeredArmorItem(LayeredArmorMaterials.LEATHERCHAINNETHERITE, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant()/*.craftRemainder(LayeredArmorItems.LEATHERCHAINBOOTS.get())*/));
+
+    public static final RegistryObject<HorseArmorItem> LEATHERIRONHORSE = ITEMS.register("horse_armor_li",() -> new HorseArmorItem(8,"li",new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<HorseArmorItem> LEATHERGOLDHORSE = ITEMS.register("horse_armor_lg",() -> new HorseArmorItem(10,"lg",new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<HorseArmorItem> LEATHERDIAMONDHORSE = ITEMS.register("horse_armor_ld",() -> new HorseArmorItem(14,"ld",new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    /*
+    public static final RegistryObject<DyeableHorseArmorItem> LEATHERIRONHORSE = ITEMS.register("li_horse_armor",() -> new DyeableHorseArmorItem(8,"li",new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<DyeableHorseArmorItem> LEATHERGOLDHORSE = ITEMS.register("lg_horse_armor",() -> new DyeableHorseArmorItem(10,"lg",new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<DyeableHorseArmorItem> LEATHERDIAMONDHORSE = ITEMS.register("ld_horse_armor",() -> new DyeableHorseArmorItem(14,"ld",new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    */
+
     public static final RegistryObject<MultiOutputRecipe.Serializer> MULTI_SERIALIZER = RECIPE_SERIALIZER_REGISTRY.register(MULTI_RECIPE_ID, MultiOutputRecipe.Serializer::new);
     public static final RegistryObject<RecipeType<MultiOutputRecipe>> MULTI_TYPE = RECIPE_TYPE_REGISTRY.register(MULTI_RECIPE_ID, () -> new RecipeType<>() {
         @Override
@@ -95,7 +104,6 @@ public class LayeredArmorItems {
         ITEMS.register(eventBus);
         RECIPE_SERIALIZER_REGISTRY.register(eventBus);
         RECIPE_TYPE_REGISTRY.register(eventBus);
-        //MULTI_SERIALIZER.
     }
 
 
