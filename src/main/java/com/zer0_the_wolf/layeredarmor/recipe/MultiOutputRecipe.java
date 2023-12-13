@@ -45,7 +45,7 @@ public class MultiOutputRecipe extends ShapelessRecipe
     public NonNullList<ItemStack> getRemainingItems(CraftingContainer pContainer)
     {
         NonNullList<ItemStack> nonnulllist = NonNullList.withSize(pContainer.getContainerSize(), ItemStack.EMPTY);
-        nonnulllist.set(4,remaining.copy());
+        nonnulllist.set(0,remaining.copy());
         return nonnulllist;
     }
 
