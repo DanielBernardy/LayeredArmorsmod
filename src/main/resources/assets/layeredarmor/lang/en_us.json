@@ -49,7 +49,7 @@
   "item.layeredarmor.lcn_leggings": "Leather Chainmail Netherite Leggings",
   "item.layeredarmor.lcn_boots": "Leather Chainmail Netherite Boots",
 
-  "item.layeredarmor.li_horse_armor": "Leather Iron Horse Armor",
-  "item.layeredarmor.lg_horse_armor": "Leather Gold Horse Armor",
-  "item.layeredarmor.ld_horse_armor": "Leather Diamond Horse Armor"
+  "item.layeredarmor.horse_armor_li": "Leather Iron Horse Armor",
+  "item.layeredarmor.horse_armor_lg": "Leather Gold Horse Armor",
+  "item.layeredarmor.horse_armor_ld": "Leather Diamond Horse Armor"
 }
